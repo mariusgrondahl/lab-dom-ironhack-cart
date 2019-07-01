@@ -1,5 +1,27 @@
+body, html{
+   background: #fafafa;
+   color: #2d2d2d;
+   padding: .3rem .6rem;
+}
+
+.list-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+  border-bottom: 1px solid #f2f2f2;
+
+}
+
+.product-name{
+  font-weight: bold;
+}
+
 input {
-  border: solid 1px black;
+  border: solid 1px lightgray;
+  padding: .5rem;
+
 }
 
 .btn {
@@ -38,4 +60,20 @@ input {
 
 .quantity {
   margin: 0 5px;
+}
+
+.total-wrapper{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.total-wrapper h3{
+  font-weight: normal;
+}
+
+.total-wrapper span{
+  font-weight: bold;
 }

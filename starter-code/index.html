@@ -10,58 +10,69 @@
   <title>Ironhack Cart</title>
 </head>
 <body>
-  <div id="shopping-wrapper">
+  <header>
+    <h2>Ironhack Shopping List</h2>
+  </header>
+  <!-- Her we add new Items -->
+  <div class="create-wrapper">
+      <input id="create-name" class="create-name" value="Productname"></input>
+      <input id="create-price" class="create-price" value="24"></span>
+      <button id="add-item" class="btn btn-success">New item</button>      
+  </div>
+
+  
+
+<div id="shopping-wrapper">
   <!-- Her comes a product -->
     <div class="list-wrapper">
       <span class="product-name">iHack Sticker</span>
       <span class="product-price" value="19">19</span>
       <div class="product-amount">
-        <label>Quantity</label>
+        <label>Qty</label>
         <input class="quantity" value="2"></input>
       </div>
 
       <div class="produt-total">
-          <label>Total:</label>
+          <label>Subtotal:</label>
         <span class="sub-total" value="0">0</span>
       </div> 
 
       <div class="product-delete">
         <button  class="btn btn-delete" type="button">Delete row</button>
       </div>
+    </div> <!-- PRODCUT END -->  
 
-      </div>
-
-
-    <!-- Her comes a product -->
-    <div class="list-wrapper">
-        <span class="product-name">iHack Mug</span>
-        <span class="product-price">20</span>
-        <div class="product-amount">
-          <label>Quantity</label>
-          <input class="quantity" value="1"></input>
-        </div>
-    
-         <div class="produt-total">
-            <label>Total:</label>
-            <span class="sub-total" value="0">0</span>
-         </div> 
-    
-         <div class="product-delete">
-           <button  class="btn btn-delete" type="button">Delete row</button>
-         </div>
-    </div>
 
     <!-- Her comes a product -->
     <div class="list-wrapper">
         <span class="product-name">iHack Mug</span>
         <span class="product-price">20</span>
         <div class="product-amount">
-          <label>Quantity</label>
+          <label>Qty</label>
           <input class="quantity" value="1"></input>
         </div>
     
          <div class="produt-total">
-            <label>Total:</label>
+            <label>Subtotal:</label>
+            <span class="sub-total" value="0" >0</span>
+         </div> 
+    
+         <div class="product-delete">
+           <button class="btn btn-delete" type="button">Delete row</button>
+         </div>
+    </div> <!-- PRODUCT END -->  
+
+    <!-- Her comes a product -->
+    <div class="list-wrapper">
+        <span class="product-name">iHack Mug</span>
+        <span class="product-price">20</span>
+        <div class="product-amount">
+          <label>Qty</label>
+          <input class="quantity" value="1"></input>
+        </div>
+    
+         <div class="produt-total">
+            <label>Subtotal:</label>
             <span class="sub-total" value="0">0</span>
          </div> 
     
@@ -69,42 +80,13 @@
            <button  class="btn btn-delete" type="button">Delete row</button>
          </div>
     
-        </div>
-      </div>
+    </div> <!-- PRODCUT END -->  
+  </div>  <!-- SHOPPING-WRAPPER END -->    
 
+  <div class="total-wrapper">
+      <h3>The total is:  <span id="total" value="">0</span></h3>
+      <button class="btn btn-success" id="calc-button" type="button">Calculate Prices</button>
   </div>
-
-
-      <!-- Her comes the Creae Product -->
-      <div class="list-wrapper">
-          <input class="product-name" value="Add name"></input>
-          <input class="product-price"value="Add price"></span>
-          <div class="product-amount">
-            <label>Quantity</label>
-            <input class="quantity" value="0"></input>
-          </div>
-      
-           <div class="produt-total">
-              <label>Total:</label>
-              <span class="sub-total" value="0">0</span>
-           </div> 
-      
-           <div class="product-delete">
-             <button  class="btn btn-success" type="button">New line</button>
-           </div>
-      
-          </div>
-        </div>
-  
-    </div>
-    
-
-      <div class="total-wrapper">
-          <button class="btn btn-success" id="calc-button" type="button">Calculate Prices</button>
-
-        <h3>The total is:  <span id="total" value="">0</span></h3>
-      </div>
-
 
 </body>
 </html>

@@ -1,7 +1,12 @@
 body, html{
    background: #fafafa;
    color: #2d2d2d;
+   font-size: 14px;
    padding: .3rem .6rem;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
 }
 
 .list-wrapper{
@@ -11,6 +16,15 @@ body, html{
   align-items: center;
   padding: 2rem 0 1rem 0;
   border-bottom: 1px solid #f2f2f2;
+}
+
+.create-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: tomato;
+  padding: 1rem ;
 
 }
 

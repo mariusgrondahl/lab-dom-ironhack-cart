@@ -1,5 +1,5 @@
 body, html{
-   background: #fafafa;
+  background: #fafafa;
    color: #2d2d2d;
    font-size: 14px;
    padding: .3rem .6rem;
@@ -14,22 +14,32 @@ h1, h2, h3, h4 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0 1rem 0;
-  border-bottom: 1px solid #f2f2f2;
+  padding: 1rem ;
+  background: white;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.list-wrapper:nth-child(even) {
+  background: #fafafa;
 }
 
 .create-wrapper{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  background: tomato;
   padding: 1rem ;
-
+  background: turquoise;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .product-name{
   font-weight: bold;
+}
+
+.product-amount input, .create-wrapper #create-price {
+  width: 30px;
 }
 
 input {
@@ -81,7 +91,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .total-wrapper h3{

@@ -53,7 +53,7 @@ function addItem() {
   let createName = document.getElementById("create-name");
   let createPrice = document.getElementById("create-price");
   productName.innerHTML = createName.value;
-  createPrice.innerHTML = createPrice.value;
+  productPrice.innerHTML = createPrice.value;
 
 
   // Setting classes, IDs and Values to the items
@@ -64,6 +64,7 @@ function addItem() {
   productAmount.className = "product-amount";
       productlabel.innerHTML = "Qty";
       productInput.innerHTML = 0;
+      productInput.className = "quantity";
   productTotal.className = "produt-total";
       subTotal.innerHTML = "Subtotal:";
       subTotalValue.className = "sub-total";
@@ -73,7 +74,6 @@ function addItem() {
       deleteButton.className = "btn btn-delete"
       deleteButton.innerHTML = "Delete Row";
     
-
   // Adding the structure
   document.getElementById("shopping-wrapper").appendChild(listWrapper);
   listWrapper.appendChild(productName);
@@ -86,12 +86,12 @@ function addItem() {
       productTotal.appendChild(subTotalValue);
   listWrapper.appendChild(productDelete);
       productDelete.appendChild(deleteButton);
-
 }
 
 // Everything that needs to happen after Load
 window.onload = function() {
   calcPrice();
+
 
   const calcButton = document.getElementById("calc-button");
   calcButton.addEventListener('click', function (event) {
@@ -101,16 +101,19 @@ window.onload = function() {
   const addItemButton = document.getElementById("add-item");
   addItemButton.addEventListener('click', function (event) {
     addItem();
+    addEventOnItem();
   });
 
 
 
 // here we add eventlistener to all deletebuttons
   let deleteButtons = document.getElementsByClassName("btn-delete");
+
+  function addEventOnItem() {
   for (let j = 0; j < deleteButtons.length; j++) {
       deleteButtons[j].addEventListener('click', function (event){
         eventClick();
     });
-  }
-
+  }}
+  addEventOnItem();
 };

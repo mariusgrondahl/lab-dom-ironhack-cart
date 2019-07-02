@@ -66,7 +66,7 @@ function addItem() {
       productInput.innerHTML = 0;
       productInput.className = "quantity";
   productTotal.className = "produt-total";
-      subTotal.innerHTML = "Subtotal:";
+      subTotal.innerHTML = "Subtotal:  ";
       subTotalValue.className = "sub-total";
       subTotalValue.value = 0;
       
